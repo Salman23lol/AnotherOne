@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/auth", authRouter);
-app.use("/auth", (req,res)=>{
+app.use("/", (req,res)=>{
   res.send("Hello im a Auth APP")
 });
 
